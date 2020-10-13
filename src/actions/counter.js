@@ -1,12 +1,12 @@
 const increment = () => {
     return {
-        type : "INCREMENT"
+        type: "INCREMENT"
     }
 }
 
 const decrement = () => {
     return {
-        type : "DECREMENT"
+        type: "DECREMENT"
     }
 }
 
