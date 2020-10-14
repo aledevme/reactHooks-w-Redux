@@ -25,6 +25,26 @@ function App() {
         >
         {number}
         </a>
+        <button onClick={()=>{}} style={
+          {
+            margin:10,
+            padding:10,
+            backgroundColor: "blueviolet",
+            border:0,
+            borderRadius:5,
+            color:"white"
+          }
+        }>increment +</button>
+        <button onClick={()=>{}} style={
+          {
+            margin:10,
+            padding:10,
+            backgroundColor: "blueviolet",
+            border:0,
+            borderRadius:5,
+            color:"white"
+          }
+        }>decrement -</button>
       </header>
     </div>
   );
