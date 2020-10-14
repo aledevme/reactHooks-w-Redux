@@ -37,7 +37,7 @@ function App() {
             color:"white"
           }
         }>increment +</button>
-        <button style={
+        <button onClick={()=> dispatch(actions.counter.decrement())} style={
           {
             margin:10,
             padding:10,
