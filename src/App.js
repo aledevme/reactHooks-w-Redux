@@ -2,8 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//redux actions and utils
+import {useSelector, useDispatch} from 'react-redux'
+import actions from './actions/index'
 
 function App() {
+
+  const {number} = useSelector(state=> state.counter)
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +23,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          App
+        {number}
         </a>
       </header>
     </div>
