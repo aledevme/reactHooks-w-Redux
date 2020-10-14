@@ -9,6 +9,8 @@ import actions from './actions/index'
 function App() {
 
   const {number} = useSelector(state=> state.counter)
+
+  const dispatch = useDispatch()
   
   return (
     <div className="App">
@@ -25,7 +27,7 @@ function App() {
         >
         {number}
         </a>
-        <button onClick={()=>{}} style={
+        <button onClick={()=> dispatch(actions.counter.increment())} style={
           {
             margin:10,
             padding:10,
@@ -35,7 +37,7 @@ function App() {
             color:"white"
           }
         }>increment +</button>
-        <button onClick={()=>{}} style={
+        <button style={
           {
             margin:10,
             padding:10,
